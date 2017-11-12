@@ -1,0 +1,15 @@
+{{#paper-content class="md-whiteframe-z1 list-demo"}}
+  {{#paper-list}}
+    {{#each model as |document|}}
+      {{#paper-item class="md-3-line"}}
+        <div class="md-list-item-text">
+          <h3>{{document.name}}</h3>
+          <h4>View Count: {{document.viewCount}}</h4>
+          <p>
+            {{document.content}}
+          </p>
+        </div>
+      {{/paper-item}}
+    {{/each}}
+  {{/paper-list}}
+{{/paper-content}}
