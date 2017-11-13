@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('projects', function() {
     this.route('show', { path: '/:id'});
   });
+  this.route('drive');
 });
 
 export default Router;
